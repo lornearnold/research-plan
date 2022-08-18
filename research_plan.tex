@@ -5,25 +5,62 @@
 \usepackage{amssymb}
 \usepackage{tabularx}
 \usepackage[margin=0.75in]{geometry}
+\usepackage{threeparttable}
 
 \newcommand\C[1]
 
 \author{Lorne Arnold}
 \title{Research Plan}
 \begin{document}
+\footnotetext[1]{Updated \today}
 \section*{Research Plan - Lorne Arnold}
 \section{Purpose}
 This research plan provides a framework for my planned research efforts over the next 5 years.
 The plan is primarily intended for my own personal reference and prioritization .
-However, I also intend to use it to communicate my research plans to others, as appropriate, and to get feedback on my plans for academic mentors.
+However, I also intend to use it to communicate my research plans to others, as appropriate, and to get feedback on my plans from academic mentors.
 
 \section{Research Topics and Goals}
-My research interests broadly include statistical site characterization and probabilistic analysis, machine learning, rock mechanics and dynamics, numerical modeling using discrete element and finite element methods, and geotechnical instrumentation and exploration methods.
 
 My research interests broadly include 1) natural hazard modeling and mitigation, and 2) geotechnical site characterization and analysis methods.
-Within these areas, I have several sub-interests. 
-Within natural hazard modeling and mitigation, my primary sub-interests are 1a) seismically-induced rock slope failure and 1b) the impact of climate change on geotechnical performance of infrastructure.
-Within geotechnical site characterization and analysis, my primary sub-interests are 2a) developing open-source geotechnical analysis tools in Python and 2b) digitizing geotechnical data collection. 
+Within these areas, I have several sub-interests:
+
+\begin{enumerate}
+\item Natural hazard modeling and mitigation
+\begin{enumerate}
+\item \textbf{Seismically-induced rock slope failure:} This interest is a continuation of my PhD research.
+Through the dynamic Bonded Particle Model (BPM) model I developed, I have several additional rock slope scenarios I would like to run to produce a more comprehensive understanding of rock slope failure mechanisms.
+I also plan to compare dynamic BPM to simplified analysis methods to create correlations that will allow for probabilistic and regional analysis.
+\item \textbf{Climate impacts on geotechnical performance of soil slopes:} In several geologic settings, natural slopes are significantly steeper than any human-made unreinforced slope would be. 
+However, these steep slopes are often very stable except for extreme loading conditions (e.g., earthquakes, extreme rainfall).
+And most often, the types of failure they experience involve small, surficial slides.
+Vegetation on slopes provides natural reinforcement in the plant root zone, and helps control the flow of water in the soil matrix to reduce the potential for hydraulicly-induced instability.
+
+As changes to our climate continue, several questions regarding steep slope stability warrant addressing:
+How will changes in temperature extremes impact the vegetation providing stability in steep slopes? Which plants are most susceptible to negative impacts from climate change, and which are most critical to providing slope protection?
+How will changes in temperature extremes impact the soil matrix? Will some of the physical processes involved in weathering accelerate, decelerate, or remain constant?
+
+Answering these questions will require interdisciplinary study involving civil engineering and plant biology.
+\end{enumerate}
+\item Geotechnical site characterization and analysis methods
+\begin{enumerate}
+\item \textbf{Developing open-source geotechnical analysis tools:} In geotechnical practice, most analysis is performed either in in-house spreadsheets or commercially-available software with limited scope of application.
+As a consultant, I developed some code-based analysis tools, but I was expected to not publish these tools as open-source because that could damage the competitive advantage associated with an exclusive too.
+Now in academia, I no longer have this constraint and am motivated to develop open-source tools to be used in everyday geotechnical work.
+The benefits to the geotechnical community for open-source coding tools will include:
+1) scalability of analysis (something not realized in spreadsheets),
+2) error reduction,
+3) increased development effort due to the crowdsourcing nature of open-source tools,
+4) a low-cost path from current deterministic analysis to a more robust probabilistic analysis approach.
+\item \textbf{Digitizing geotechnical data collection:} Machine learning involves digitizing the natural (and often subconscious) ability humans have for recognizing patterns and drawing inferences from them.
+Geotechnical engineering is one of the more imprecise fields due to the inherent variability of geologic materials.
+As a result, ``engineering judgment'', based largely on experience and intuition, have a significant role to play in the field.
+For example, an experienced geotechnical engineer may be able to estimate grain size distribution, plasticity, and compactability with only a quick glance at or touch of a soil sample.
+With the ubiquity of high-resolution cameras, a machine learning algorithm for predicting soil properties from photos seems feasible and valuable.
+This example is one of many that I believe are overdue for exploration in geotechnical data collection.
+I hope to use my experience in industry to identify areas where this type of research will provide a positive impact on the efficiency and reliability of geotechnical data collection.
+\end{enumerate}
+\end{enumerate}
+
 
 \section{Funding Sources}
 \begin{enumerate}
@@ -54,35 +91,93 @@ This grant could be a good candidate for collaboration with WSDOT by using a lar
 \noindent \textbf{Unknown:} Some of my research interests involve tool development and data collection methods.
 These are more applied and less fundamental than what the NSF typically funds, so I need to research alternative funding sources. 
 WSDOT and the FHWA are the agencies I plan to look into first.
+Additionally, some of my research ideas involving digitization of data collection may be well-suited for commercial development. 
+Although I'm not personally interested in starting a company, collaboration with a local incubator could provide some interesting opportunities for myself and some motivated students.
 
 \section{Publication Plans}
 I plan to publish two peer-reviewed papers per year (on average).
-I would like at least one of those papers to be a journal article.
+I would like at least one of those papers to be a journal article. 
+My outlook on publications is outlined below.
+Currently, a significant issue with this publication plan is that it focuses exclusively on one subset (1a -- seismically-induced rock slope failure) of my research topics.
+This is something I hope to change over time as I develop clearer research plans for other areas. 
+Although the following section is outlined for approximately 5 years, I hope to delay 25 to 50\% of the publications listed below to make room for additional publications from other research areas.
 \\
 \\
+\noindent \textbf{Journal Articles:} My strategy is to use feedback from my conference papers and new data from my research to develop more detailed papers for journal publication. 
+I will target the highest impact journal that I think is a good fit for my paper, and pursue lower impact journals if I'm not able to get into my target journals.
+\\
+\\
+\noindent Planned journal articles:
+\begin{itemize}
+\item JA1 - ``Seismically induced failure in homogeneous rock slopes''
+\\Target Journal 1: Engineering Geology; Target Journal 2: Journal of Geophysical Research -- Earth Surface
+\item JA2 - ``Dynamic boundary conditions and wave propagation in particulate discrete element models''
+\\Target Journal: Numerical and Analytical Methods in Geomechanics
+\item JA3 - ``A sliding block correlation for predicting seismically induced rock slope failure''
+\\ Target Journal: Soil Dynamics and Earthquake Engineering
+\item JA4 - ``Seismically induced failure in rock slopes with pre-existing discontinuities''
+\\ Target Journal 1: Journal of Geophysical Research -- Earth Surface; Target Journal 2: Engineering Geology
+\item JA5 - ``A seismic risk analysis framework for regional-scale rock slope stability''
+\\ Target Journal: Earthquake Spectra
+\end{itemize}
+
 \noindent \textbf{Conference Papers:} My strategy for conference papers is to target publication at conferences I plan to attend in person and that will provide networking opportunities for funding and research collaboration.
 My goal is to write papers of interest to the engineering community that show preliminary results in a limited way that allows the paper to be developed more fully for future journal publication.
 \\
 \\
-\noindent \textbf{Journal Papers:} My strategy is to use feedback from my conference papers and new data from my research to develop more detailed papers for journal publication. 
-I will target the highest impact journal that I think is a good fit for my paper, and pursue lower impact journals if I'm not able to get into my target journals.
-\section{Student Involvement}
+\noindent Planned conference papers:
+\begin{itemize}
+\item CP1 - ``Estimating seismically induced rock slope failure volume using a sliding block correlation''
+\\Conference: GeoCongress (2023)
+\item CP2 - ``Modeling Rock Fracture with PFC3D Distinct Element Software''
+\\Conference: American Geophysical Union (2023)
+\item CP3 - ``Failure mechanisms and wave dynamics in rock slopes''
+\\ Conference: 8th International Conference on Earthquake Geotechnical Engineering (2024)
+\item CP4 - ``Scalability of simplified methods
+\\ Conference: National Earthquake Conference (2025)
+\item CP5 - unknown
+\\ Conference: 9th International Conference on Earthquake Geotechnical Engineering (2028)
+\end{itemize}
 
+%\noindent \textbf{Datasets:} An increasing and important trend in academia involves publishing datasets.
+%For NSF-funded research in particular, a well-organized, published data set is almost required.
+%Published datasets can be cited using a digital object identifier (doi) and are increasingly being considered as evidence of scholarship for tenure-track faculty in large research institutions.
+%I plan to publish my research datasets on the NSF-hosted DesignSafe repository.
+\section{Student Involvement}
+Undergraduate research: I plan to use undergraduate researchers
 
 \section{Timeline}
 
 \begin{table}[h!]
+\begin{threeparttable}
 \begin{center}
-\begin{tabularx}{1.0\linewidth}{|l|X|X|X|X|X|X|X|X|X|X|X|X|}
+\begin{tabularx}{1.0\linewidth}{|l|X|X|X|X|X|X|}
 \hline
-          &\textbf{J} &\textbf{F} &\textbf{M} &\textbf{A} &\textbf{M} &\textbf{J} &\textbf{J} &\textbf{A} &\textbf{S} &\textbf{O} &\textbf{N} &\textbf{D} \\ \hline
-     \textbf{2022} &\C{Jan} &\C{Feb} &\C{Mar} &\C{Apr} &\C{May} &\C{Jun} &\C{Jul} &\C{Aug} &\C{Sep} &\C{Oct}GR2 due &\C{Nov} P1 sub &\C{Dec} \\\hline
-     \textbf{2023} &\C{Jan} GR2 start &\C{Feb} &\C{Mar} &\C{Apr} 3-yr rev&\C{May} &\C{Jun} GR1 ends &\C{Jul} &\C{Aug} &\C{Sep} &\C{Oct} &\C{Nov} &\C{Dec} \\\hline
-     \textbf{2024} &\C{Jan} &\C{Feb} &\C{Mar} &\C{Apr} &\C{May} &\C{Jun} &\C{Jul} GR3 due &\C{Aug} &\C{Sep} &\C{Oct} &\C{Nov}  &\C{Dec}  \\\hline
-     \textbf{2025} &\C{Jan} GR2 ends; GR3 start &\C{Feb} &\C{Mar} &\C{Apr}  &\C{May} &\C{Jun} &\C{Jul} &\C{Aug} &\C{Sep} &\C{Oct} &\C{Nov} &\C{Dec} \\\hline
-     \textbf{2026} &\C{Jan} &\C{Feb} &\C{Mar} &\C{Apr} Tenure app&\C{May} &\C{Jun} &\C{Jul} &\C{Aug} &\C{Sep} &\C{Oct} &\C{Nov} &\C{Dec} \\\hline
-     \textbf{2027} &\C{Jan} &\C{Feb} &\C{Mar} &\C{Apr} &\C{May} &\C{Jun} &\C{Jul} &\C{Aug} &\C{Sep} &\C{Oct} &\C{Nov}  &\C{Dec} \\\hline
+          &\textbf{2022} &\textbf{2023} &\textbf{2024} &\textbf{2025} &\textbf{2026} &\textbf{2027} \\ \hline
+     \textbf{Jan} &\C{2022} &\C{2023} &\C{2024} &\C{2025} (\$ $\Rightarrow$: CAREER) &\C{2026} &\C{2027} \\ \hline
+     \textbf{Feb} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Mar} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Apr} &\C{2022} &\C{2023} S: 2-yr review &\C{2024} &\C{2025} &\C{2026} S: tenure &\C{2027} \\ \hline
+     \textbf{May} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Jun} &\C{2022} &\C{2023} (\$ $\Rightarrow$: ERI) &\C{2024} &\C{2025} (\$ $\otimes$: ERI)&\C{2026} &\C{2027} \\ \hline
+     \textbf{Jul} &\C{2022} $\Rightarrow$: RRF &\C{2023} \$ $\otimes$: RRF &\C{2024} S: CAREER &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Aug} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Sep} &\C{2022} S: ERI &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Oct} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Nov} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
+     \textbf{Dec} &\C{2022} &\C{2023} &\C{2024} &\C{2025} &\C{2026} &\C{2027} \\ \hline
 \end{tabularx}
+
+\begin{tablenotes}
+    \small
+    \item S: Submission due
+    \item T: Target submission
+%    \item P: Manuscript publication
+    \item \$ $\Rightarrow$: Start of funding 
+    \item \$ $\otimes$: End of funding
+    \item (Items in parentheses are pending award)
+\end{tablenotes}
 \end{center}
+\end{threeparttable}
 \end{table}
 \end{document}
